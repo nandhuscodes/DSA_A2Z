@@ -1,0 +1,22 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Root-level wildcard matching for any current and future submodules
+.idea/
+**/.idea/
+*.iml
+**/*.iml
+out/
+**/out/
+gen/
+**/gen/
+*.class
+**/*.class
