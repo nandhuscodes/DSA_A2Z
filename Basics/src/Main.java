@@ -18,13 +18,13 @@ public class Main {
                 case 2:
                     ReportCard reportCard = new ReportCard();
                     System.out.println("Enter the score of the 3 subjects: ");
-                    int avg = reportCard.findAverage(
-                            userInput.nextInt(),
-                            userInput.nextInt(),
-                            userInput.nextInt()
-                    );
+                    int a = userInput.nextInt();
+                    int b = userInput.nextInt();
+                    int c = userInput.nextInt();
+                    int avg = reportCard.findAverage(a,b,c);
                     System.out.println("Average score: " + avg);
-                    System.out.println("Report: " + reportCard.isPass(avg));
+                    System.out.println("Subject report: " + reportCard.isSubjectWisePass(a,b,c));
+                    System.out.println("Overall Report: " + reportCard.isPass(avg));
                     break;
                 default:
                     choice = 0;
