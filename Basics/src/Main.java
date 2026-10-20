@@ -15,6 +15,17 @@ public class Main {
                             userInput.nextInt()
                     ));
                     break;
+                case 2:
+                    ReportCard reportCard = new ReportCard();
+                    System.out.println("Enter the score of the 3 subjects: ");
+                    int avg = reportCard.findAverage(
+                            userInput.nextInt(),
+                            userInput.nextInt(),
+                            userInput.nextInt()
+                    );
+                    System.out.println("Average score: " + avg);
+                    System.out.println("Report: " + reportCard.isPass(avg));
+                    break;
                 default:
                     choice = 0;
                     break;
@@ -25,6 +36,7 @@ public class Main {
     }
     public static String getChoice(){
         return "Which program you wish to run? (0 to exit)\n" +
-                "1. Largest of two number";
+                "1. Largest of two number\n" +
+                "2. Average Score and Report";
     }
 }
